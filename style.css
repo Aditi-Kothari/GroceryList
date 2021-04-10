@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@600&display=swap'); 
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: white;
+    font-family: 'Recursive', sans-serif;
+}
+.container{
+    margin: auto;
+    width: 90%;
+    display: flex;
+}
+.groceries{
+    width: 600px;
+    min-height: 100vh;
+    margin: auto;
+    background-color:black;
+    box-shadow: 10px 10px 24px 0 rgba(0, 0, 0, 0.76);
+}
+.groceries h1{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 1em;
+    color: white;
+}
+.styling{
+    font-weight: 800;
+    color: lime;
+}
+.groceries i{
+    font-size: 2rem;
+    color: lime;
+}
+.ente{
+    text-align: center;
+}
+.groceries input{
+    outline: none;
+    width: 70%;
+    font-size: 1.5rem;
+    border-radius: 50px;
+    padding: 12px 15px;
+    border: 2px solid black;
+
+}
+::placeholder{
+    color:grey;
+    font-size: 22px;
+    font-family: 'Recursive', sans-serif;
+}
+#bin{
+    color: red;
+    margin-left: 8px;
+}
+#pencil{
+    margin-right: 8px;
+}
+#allItems h2{
+    margin-left: 50px;
+    margin-right: 10px;
+    margin-top: 15px;
+    font-size: 2rem;
+    color:lime;
+}
+@media(max-width:580px){
+    ::placeholder{
+        font-size: 18px;
+    }
+}
+@media(max-width:480px){
+    .groceries h1{
+        font-size: 2rem;
+    }
+    .groceries i{
+        font-size: 1.5rem;
+    }
+    .groceries input{
+        font-size: 1rem;
+    }
+    #allItems h2{
+        font-size: 1.5rem;
+        margin-left: 25px;
+    }
+    ::placeholder{
+        font-size: 12px;
+    }
+
+}
+@media(max-width:340px){
+    ::placeholder{
+        font-size: 10px;
+    }
+}
